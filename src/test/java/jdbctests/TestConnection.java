@@ -14,6 +14,7 @@ public class TestConnection {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("select * from regions");
 
+
 //        //once you set up connection default pointer looks for 0
 //        //next() --> move pointer to first row
 //        resultSet.next();
