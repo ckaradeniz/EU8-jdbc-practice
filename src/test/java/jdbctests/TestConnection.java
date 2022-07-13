@@ -15,34 +15,33 @@ public class TestConnection {
         ResultSet resultSet = statement.executeQuery("select * from regions");
 
 
-//        //once you set up connection default pointer looks for 0
-//        //next() --> move pointer to first row
-//        resultSet.next();
-//
-//        //getting information with column name
-//        System.out.println(resultSet.getString("region_name"));
-//
-//        //getting information with column index(starts 1)
-//        System.out.println(resultSet.getInt(1));
-//
-//        //1 - Europe
-//        //2 - Americas
-//        System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2));
-//
-//        //move to second row
-//        resultSet.next();
-//        System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2));
-//
-//        //move to third row
-//        resultSet.next();
-//        System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2));
+        //once you set up connection default pointer looks for 0
+        //next() --> move pointer to first row
+        resultSet.next();
+
+        //getting information with column name
+        System.out.println(resultSet.getString("region_name"));
+
+        //getting information with column index(starts 1)
+        System.out.println(resultSet.getInt(1));
+
+        //1 - Europe
+        //2 - Americas
+        System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2));
+
+        //move to second row
+        resultSet.next();
+        System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2));
+
+        //move to third row
+        resultSet.next();
+        System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2));
 
         while (resultSet.next()){
 
             System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2));
 
         }
-
 
 
         //close connection
